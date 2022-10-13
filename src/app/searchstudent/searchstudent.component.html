@@ -6,15 +6,15 @@
 
             <div class="row g-3">
 
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 xxl-6"><br>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12">
                     <label for="Employee code">Admission Number</label>
-                    <input type="text" class="form-control" placeholder="Enter your admission number">
+                    <input type="text" class="form-control" placeholder="Enter your admission number" name="admissionNo" [(ngModel)]="admissionNo">
         
                 </div>
 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12"><br>
                         
-                    <button class="btn btn-success">Search</button>
+                    <button class="btn btn-success" (click)="readValues()">Search</button>
                     
                 </div>
         
